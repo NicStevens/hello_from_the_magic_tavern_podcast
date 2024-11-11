@@ -3,9 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to the Hello from the Magic Tavern podcast fanpage created for a SheCodes challenge."
+    />
     <title>Hello from the Magic Tavern</title>
+    <style>
+      header {
+        background: yellow;
+        color: black;
+      }
+      body {
+        background: black;
+        color: white;
+      }
+    </style>
   </head>
-  <body>
+  <header>
+    <span>
+      <a href="#about">About</a> | <a href="#hosts">Hosts</a> |
+      <a href="#guests">Guests</a> |
+      <a href="#burger-king">Burger King</a>
+    </span>
     <h1>Hello from the Magic Tavern</h1>
+    <h2>A weekly podcast from the magical land of Foon</h2>
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/5d88b1ead6827e7ba648b27c/1592313465777-VL1SQYO143X9I14CIKK6/bird-test.png?format=500w"
+      alt="crow standing next to a microphone"
+    />
+  </header>
+  <body>
+    <div id="about">
+      <h3>About</h3>
+      <p>This is what the show is about</p>
+      <a
+        href="https://hellofromthemagictavern.com/"
+        target="_blank"
+        title="Official Hello from the Magic Tavern Website"
+        >Official Website</a
+      >
+    </div>
+    <div>
+      Why listen
+      <p>This is why you should listen</p>
+    </div>
+    <div>
+      <h3 id="hosts">Meet the Hosts</h3>
+      <h2>Arnie Niekamp</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/962/original/HFTMT_Arnie.jpeg?1731286437"
+        alt="Arnie Niekamp"
+        width="300px"
+      />
+      <h2>Chunt the Shapeshifter</h2>
+      <img
+        src="https://petecooperwildlife.com/wp-content/uploads/2013/06/img_5615.jpg?w=300"
+        alt="Badger"
+      />
+      <h2>
+        Usidore the Blue, Wizard of the 12th Realm of Ephysiyies, Master of
+        Light and Shadow, Manipulator of Magical Delights, Devourer of Chaos,
+        Champion of the Great Halls of Terr'akkas, the elves know him as Fi’ang
+        Yalok, the dwarfs know him as Zoenen Hoogstandjes, and he is known in
+        the Northeast as Gaismunēnas Meistar, and there may be other secret
+        names you do not know yet
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/963/original/HFTMT_Usidore.jpeg?1731286452"
+        alt="Usidore the Blue"
+        width="300px"
+      />
+    </div>
+    <div>
+      <p>Want to read one of the hosts' unforgettable catchphrases?</p>
+      <form action="submit">
+        <label for="host">Enter their name here:</label>
+        <input
+          type="text"
+          placeholder="Arnie, Chunt, or Usidore"
+          id="host"
+          required
+        />
+        <button>Submit</button>
+      </form>
+      <form action="submit">
+        <label for="hosts"
+          >Want to read one of the hosts' unforgettable catchphrases? Choose a
+          host and click the Submit button</label
+        >
+        <select name="" id="hosts">
+          <option value="arnie">Arnie</option>
+          <option value="chunt">Chunt</option>
+          <option value="usidore">Usidore</option>
+        </select>
+      </form>
+      <form action="submit">
+        <label for="hosts"
+          >Want to read one of the hosts' unforgettable catchphrases? Choose a
+          host and click the Submit button</label
+        >
+        <ul>
+          <li>
+            <input type="radio" name="host" id="arnie" value="arnie" />
+            <label for="arnie">Arnie Niekamp</label>
+          </li>
+          <li>
+            <input type="radio" name="host" id="chunt" value="chunt" />
+            <label for="arnie">Chunt the Shapeshifter</label>
+          </li>
+
+          <li>
+            <input type="radio" name="host" id="usidore" value="usidore" />
+            <label for="arnie"
+              >Usidore the Blue, Wizard of the 12th Realm of Ephysiyies, Master
+              of Light and Shadow, Manipulator of Magical Delights, Devourer of
+              Chaos, Champion of the Great Halls of Terr'akkas, the elves know
+              him as Fi’ang Yalok, the dwarfs know him as Zoenen Hoogstandjes,
+              and he is known in the Northeast as Gaismunēnas Meistar, and there
+              may be other secret names you do not know yet</label
+            >
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div>
+      <h3 id="guests">Some of the Guests</h3>
+      <ul>
+        <li>Dripfang</li>
+        <li>Momo the Mouse</li>
+        <li>Baron Dragoon</li>
+        <li>A series of Bats</li>
+        <li>Larry Birdman</li>
+        <li>Flower</li>
+      </ul>
+    </div>
+    <div id="burger-king">Burger King</div>
+    <div>Spotify</div>
+    <footer>
+      Coded by
+      <a
+        href="https://www.linkedin.com/in/nicky-stevens-ba763a8/"
+        target="_blank"
+        title="Nicky Stevens LinkedIn Profile"
+        >Nicky Stevens</a
+      >
+    </footer>
+    <script>
+      alert("Hello");
+    </script>
   </body>
 </html>
