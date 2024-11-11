@@ -12,133 +12,215 @@
       header {
         background: yellow;
         color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        padding: 30px 70px;
+        max-width: 1200px;
+        margin: 0 auto;
       }
+      h1 {
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .crow {
+        width: 400px;
+      }
+      .crow-h1-h2 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+      }
+
       body {
-        background: black;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/970/original/burger_king_2.jpg?1731290545");
+
         color: white;
+
+        margin: 0 auto;
+        max-width: 1100px;
+      }
+      header a {
+        color: black;
+        font-size: 20px;
+        padding: 30px 10px;
+      }
+
+      .container {
+        background: black;
+        max-width: 1000px;
+        border: solid 5px rgb(255, 255, 0, 0.7);
+        margin: 20px auto;
+        padding: 20px;
+      }
+
+      .host {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+
+      .host-chunt {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+
+      .host-photo {
+        border-radius: 30px;
       }
     </style>
   </head>
-  <header>
-    <span>
-      <a href="#about">About</a> | <a href="#hosts">Hosts</a> |
-      <a href="#guests">Guests</a> |
-      <a href="#burger-king">Burger King</a>
-    </span>
-    <h1>Hello from the Magic Tavern</h1>
-    <h2>A weekly podcast from the magical land of Foon</h2>
-    <img
-      src="https://images.squarespace-cdn.com/content/v1/5d88b1ead6827e7ba648b27c/1592313465777-VL1SQYO143X9I14CIKK6/bird-test.png?format=500w"
-      alt="crow standing next to a microphone"
-    />
-  </header>
   <body>
-    <div id="about">
-      <h3>About</h3>
-      <p>This is what the show is about</p>
-      <a
-        href="https://hellofromthemagictavern.com/"
-        target="_blank"
-        title="Official Hello from the Magic Tavern Website"
-        >Official Website</a
-      >
-    </div>
-    <div>
-      Why listen
-      <p>This is why you should listen</p>
-    </div>
-    <div>
-      <h3 id="hosts">Meet the Hosts</h3>
-      <h2>Arnie Niekamp</h2>
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/962/original/HFTMT_Arnie.jpeg?1731286437"
-        alt="Arnie Niekamp"
-        width="300px"
-      />
-      <h2>Chunt the Shapeshifter</h2>
-      <img
-        src="https://petecooperwildlife.com/wp-content/uploads/2013/06/img_5615.jpg?w=300"
-        alt="Badger"
-      />
-      <h2>
-        Usidore the Blue, Wizard of the 12th Realm of Ephysiyies, Master of
-        Light and Shadow, Manipulator of Magical Delights, Devourer of Chaos,
-        Champion of the Great Halls of Terr'akkas, the elves know him as Fi’ang
-        Yalok, the dwarfs know him as Zoenen Hoogstandjes, and he is known in
-        the Northeast as Gaismunēnas Meistar, and there may be other secret
-        names you do not know yet
-      </h2>
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/963/original/HFTMT_Usidore.jpeg?1731286452"
-        alt="Usidore the Blue"
-        width="300px"
-      />
-    </div>
-    <div>
-      <p>Want to read one of the hosts' unforgettable catchphrases?</p>
-      <form action="submit">
-        <label for="host">Enter their name here:</label>
-        <input
-          type="text"
-          placeholder="Arnie, Chunt, or Usidore"
-          id="host"
-          required
-        />
-        <button>Submit</button>
-      </form>
-      <form action="submit">
-        <label for="hosts"
-          >Want to read one of the hosts' unforgettable catchphrases? Choose a
-          host and click the Submit button</label
+    <header>
+      <span>
+        <a href="#about">About</a> | <a href="#hosts">Hosts</a> |
+        <a href="#guests">Guests</a> |
+        <a href="#spotify">Listen to the Podcast</a>
+      </span>
+      <div class="crow-h1-h2">
+        <div>
+          <img
+            class="crow"
+            src="https://images.squarespace-cdn.com/content/v1/5d88b1ead6827e7ba648b27c/1592313465777-VL1SQYO143X9I14CIKK6/bird-test.png?format=500w"
+            alt="crow standing next to a microphone"
+          />
+          <h2>A weekly podcast from the magical land of Foon</h2>
+        </div>
+        <div>
+          <h1>Hello from the Magic Tavern</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container" id="about">
+        <h3>About</h3>
+        <p>
+          This is what the show is about...makes your bad days good and your
+          good days better
+        </p>
+        <a
+          href="https://hellofromthemagictavern.com/"
+          target="_blank"
+          title="Official Hello from the Magic Tavern Website"
+          >Official Website</a
         >
-        <select name="" id="hosts">
-          <option value="arnie">Arnie</option>
-          <option value="chunt">Chunt</option>
-          <option value="usidore">Usidore</option>
-        </select>
-      </form>
-      <form action="submit">
-        <label for="hosts"
-          >Want to read one of the hosts' unforgettable catchphrases? Choose a
-          host and click the Submit button</label
-        >
-        <ul>
-          <li>
-            <input type="radio" name="host" id="arnie" value="arnie" />
-            <label for="arnie">Arnie Niekamp</label>
-          </li>
-          <li>
-            <input type="radio" name="host" id="chunt" value="chunt" />
-            <label for="arnie">Chunt the Shapeshifter</label>
-          </li>
+      </div>
+      <div class="container">
+        <h3 id="hosts">Hello from the Hosts</h3>
+        <div class="host">
+          <img
+            class="host-photo arnie"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/962/original/HFTMT_Arnie.jpeg?1731286437"
+            alt="Arnie Niekamp"
+            width="300px"
+          />
+          <h2>Arnie Niekamp</h2>
+        </div>
+        <div class="host-chunt">
+          <h2>Chunt the Shapeshifter</h2>
+          <img
+            class="host-photo chunt"
+            src="https://petecooperwildlife.com/wp-content/uploads/2013/06/img_5615.jpg?w=300"
+            alt="Badger"
+          />
+        </div>
+        <div class="host">
+          <img
+            class="host-photo usidore"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/963/original/HFTMT_Usidore.jpeg?1731286452"
+            alt="Usidore the Blue"
+            width="300px"
+          />
+          <h2>
+            Usidore the Blue, Wizard of the 12th Realm of Ephysiyies, Master of
+            Light and Shadow, Manipulator of Magical Delights, Devourer of
+            Chaos, Champion of the Great Halls of Terr'akkas, the elves know him
+            as Fi’ang Yalok, the dwarfs know him as Zoenen Hoogstandjes, and he
+            is known in the Northeast as Gaismunēnas Meistar, and there may be
+            other secret names you do not know yet
+          </h2>
+        </div>
+      </div>
+      <div>
+        <p>Want to read one of the hosts' unforgettable catchphrases?</p>
+        <form action="submit">
+          <label for="host">Enter their name here:</label>
+          <input
+            type="text"
+            placeholder="Arnie, Chunt, or Usidore"
+            id="host"
+            required
+          />
+          <button>Submit</button>
+        </form>
+        <form action="submit">
+          <label for="hosts"
+            >Want to read one of the hosts' unforgettable catchphrases? Choose a
+            host and click the Submit button</label
+          >
+          <select name="" id="hosts">
+            <option value="arnie">Arnie</option>
+            <option value="chunt">Chunt</option>
+            <option value="usidore">Usidore</option>
+          </select>
+        </form>
+        <form action="submit">
+          <label for="hosts"
+            >Want to read one of the hosts' unforgettable catchphrases? Choose a
+            host and click the Submit button</label
+          >
+          <ul>
+            <li>
+              <input type="radio" name="host" id="arnie" value="arnie" />
+              <label for="arnie">Arnie Niekamp</label>
+            </li>
+            <li>
+              <input type="radio" name="host" id="chunt" value="chunt" />
+              <label for="arnie">Chunt the Shapeshifter</label>
+            </li>
 
-          <li>
-            <input type="radio" name="host" id="usidore" value="usidore" />
-            <label for="arnie"
-              >Usidore the Blue, Wizard of the 12th Realm of Ephysiyies, Master
-              of Light and Shadow, Manipulator of Magical Delights, Devourer of
-              Chaos, Champion of the Great Halls of Terr'akkas, the elves know
-              him as Fi’ang Yalok, the dwarfs know him as Zoenen Hoogstandjes,
-              and he is known in the Northeast as Gaismunēnas Meistar, and there
-              may be other secret names you do not know yet</label
-            >
-          </li>
+            <li>
+              <input type="radio" name="host" id="usidore" value="usidore" />
+              <label for="arnie"
+                >Usidore the Blue, Wizard of the 12th Realm of Ephysiyies,
+                Master of Light and Shadow, Manipulator of Magical Delights,
+                Devourer of Chaos, Champion of the Great Halls of Terr'akkas,
+                the elves know him as Fi’ang Yalok, the dwarfs know him as
+                Zoenen Hoogstandjes, and he is known in the Northeast as
+                Gaismunēnas Meistar, and there may be other secret names you do
+                not know yet</label
+              >
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="container">
+        <h3 id="guests">Some of the Guests</h3>
+        <ul>
+          <li>Dripfang</li>
+          <li>Momo the Mouse</li>
+          <li>Baron Dragoon</li>
+          <li>A series of Bats</li>
+          <li>Larry Birdman</li>
+          <li>Flower</li>
         </ul>
-      </form>
-    </div>
-    <div>
-      <h3 id="guests">Some of the Guests</h3>
-      <ul>
-        <li>Dripfang</li>
-        <li>Momo the Mouse</li>
-        <li>Baron Dragoon</li>
-        <li>A series of Bats</li>
-        <li>Larry Birdman</li>
-        <li>Flower</li>
-      </ul>
-    </div>
-    <div id="burger-king">Burger King</div>
-    <div>Spotify</div>
+      </div>
+      <div id="spotify">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/episode/04dEnGx2DE07duLVYvatDm?utm_source=generator"
+          width="100%"
+          height="352"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </main>
     <footer>
       Coded by
       <a
@@ -148,8 +230,6 @@
         >Nicky Stevens</a
       >
     </footer>
-    <script>
-      alert("Hello");
-    </script>
+    <script></script>
   </body>
 </html>
