@@ -19,6 +19,7 @@
         max-width: 1200px;
         margin: 0 auto;
       }
+
       h1 {
         font-size: 70px;
         text-align: center;
@@ -43,6 +44,7 @@
 
         margin: 0 auto;
         max-width: 1100px;
+        font-size: 16px;
       }
       header a {
         color: black;
@@ -50,14 +52,41 @@
         padding: 30px 10px;
       }
 
+      a {
+        color: yellow;
+        text-decoration: none;
+      }
+
       .container {
-        background: black;
+        background: rgb(31, 31, 29);
         max-width: 1000px;
         border: solid 5px rgb(255, 255, 0, 0.7);
         margin: 20px auto;
         padding: 20px;
       }
+      .container-2 {
+        background: rgb(255, 255, 0, 0.7);
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px black;
+        text-align: center;
+        border-radius: 5px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding: 30px 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
 
+      strong {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      hr {
+        margin: 30px 30px;
+      }
+      #about {
+        text-align: center;
+      }
       .host {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -70,6 +99,11 @@
 
       .host-photo {
         border-radius: 30px;
+      }
+
+      footer {
+        text-align: center;
+        margin: 20px auto;
       }
     </style>
   </head>
@@ -96,55 +130,140 @@
     </header>
     <main>
       <div class="container" id="about">
-        <h3>About</h3>
         <p>
-          This is what the show is about...makes your bad days good and your
-          good days better
+          After falling through a portal behind a Burger King in Chicago on
+          Earth, Arnie Niekamp found himself in the magical land of Foon. Using
+          the wi-fi signal from the Burger King, Arnie along with his Foonian
+          friends, Chunt the shapeshifter and Usidore the wizard, host a weekly
+          podcast during which they interview residents of Foon. Guests range
+          from all sorts of magical creatures from a mouse human strength and a
+          foul-mouthed flower to a necromancer made of 1,000 snakes in a skin
+          suit, the Barron of Shrike Valley, and his creepy twins.
         </p>
-        <a
-          href="https://hellofromthemagictavern.com/"
-          target="_blank"
-          title="Official Hello from the Magic Tavern Website"
-          >Official Website</a
+
+        <p>
+          Immerse yourself into a fantastical world, get to know the stories of
+          Foon's diverse characters, see if you can keep up with the pop
+          curlture references, and revel (or maybe blush) in some good humored
+          silliness.
+        </p>
+      </div>
+      <div class="container-2">
+        <strong>
+          "Hello from the Magic Tavern is a hilarious improv comedy podcast that
+          will make a bad day good and a good day even better." - Avid
+          Listener</strong
         >
       </div>
       <div class="container">
         <h3 id="hosts">Hello from the Hosts</h3>
         <div class="host">
-          <img
-            class="host-photo arnie"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/962/original/HFTMT_Arnie.jpeg?1731286437"
-            alt="Arnie Niekamp"
-            width="300px"
-          />
-          <h2>Arnie Niekamp</h2>
+          <div>
+            <img
+              class="host-photo arnie"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/962/original/HFTMT_Arnie.jpeg?1731286437"
+              alt="Arnie Niekamp"
+              width="300px"
+            />
+          </div>
+          <div>
+            <h2>Arnie Niekamp</h2>
+            <p>
+              Arnie is a human from Chicago, Illinois on Earth. He fell through
+              a dimensional portal behind the Burger King on the corner of
+              Irving Park and Clark Street in Chicago and landed in the magical
+              land of Foon. Since he had his podcasting equipment in his Toyota
+              Camry, which fell through the portal with him, Arnie decided to
+              start a podcast with his new friends, Chunt and Usidore, using the
+              Burger King wi-fi. He is known as the guy from another world, and
+              he is bad at math.
+            </p>
+            <p>Nicknames: Carnival Wilson, Fat Shaggy, Nie Nie</p>
+            <p>
+              Played by
+              <a href="https://www.instagram.com/arnieniekamp/?hl=en"
+                >Arnie Niekamp</a
+              >
+            </p>
+          </div>
         </div>
+        <hr />
         <div class="host-chunt">
-          <h2>Chunt the Shapeshifter</h2>
-          <img
-            class="host-photo chunt"
-            src="https://petecooperwildlife.com/wp-content/uploads/2013/06/img_5615.jpg?w=300"
-            alt="Badger"
-          />
+          <div>
+            <h2>Chunt the Shapeshifter</h2>
+            <p>
+              Chunt is a shapeshifter who can often be found in badger form. The
+              child of a hunger ghost and a manticore (a creature with a lion's
+              head, scorpion body, and dragon or bat wings), Chunt is a popular
+              staple of Foon known for his various ventures such as hosting
+              Chunt's Night and running Chu-Chu's Chow.
+            </p>
+            <p>Nicknames: Chu Chu, King of the Badger, Li'l Squish</p>
+            <p>
+              Played by
+              <a
+                href="https://www.instagram.com/adalrifai/?hl=en"
+                target="_blank"
+                >Adal Rifai</a
+              >
+            </p>
+          </div>
+          <div>
+            <img
+              class="host-photo chunt"
+              src="https://petecooperwildlife.com/wp-content/uploads/2013/06/img_5615.jpg?w=300"
+              alt="Badger"
+            />
+          </div>
         </div>
+        <hr />
         <div class="host">
-          <img
-            class="host-photo usidore"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/963/original/HFTMT_Usidore.jpeg?1731286452"
-            alt="Usidore the Blue"
-            width="300px"
-          />
-          <h2>
-            Usidore the Blue, Wizard of the 12th Realm of Ephysiyies, Master of
-            Light and Shadow, Manipulator of Magical Delights, Devourer of
-            Chaos, Champion of the Great Halls of Terr'akkas, the elves know him
-            as Fi’ang Yalok, the dwarfs know him as Zoenen Hoogstandjes, and he
-            is known in the Northeast as Gaismunēnas Meistar, and there may be
-            other secret names you do not know yet
-          </h2>
+          <div>
+            <img
+              class="host-photo usidore"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/963/original/HFTMT_Usidore.jpeg?1731286452"
+              alt="Usidore the Blue"
+              width="300px"
+            />
+          </div>
+          <div>
+            <h2>Usidore the Blue</h2>
+            <p>
+              Usidore is the Blue wizard. He was created of the earth, wind,
+              fire, and birds and came into the world as a fully formed adult
+              over 300 years ago. Having studied at the Great Halls of
+              Tarr'akkas, he devotes his life to defeating evil. Most noteably
+              he seeks to defeat "The Dark Lord." He has many names including
+              secret ones that are said to have great, and sometimes
+              destructive, power.
+            </p>
+            <p>
+              Some of Usidore's names: Usidore the Blue, Wizard of the 12th
+              Realm of Ephysiyies, Master of Light and Shadow, Manipulator of
+              Magical Delights, Devourer of Chaos, Champion of the Great Halls
+              of Terr'akkas, the elves know him as Fi’ang Yalok, the dwarfs know
+              him as Zoenen Hoogstandjes, and he is known in the Northeast as
+              Gaismunēnas Meistar, and there may be other secret names you do
+              not know yet
+            </p>
+            <p>
+              Learn more about Usidore and his names on his website
+              <a href="https://www.usidorerocks.com/#overview"
+                >Usidore ROCKS!</a
+              >
+            </p>
+            <p>
+              Played by
+              <a href="https://www.instagram.com/morepeoplehappy/"
+                >Matt Young</a
+              >
+            </p>
+          </div>
         </div>
       </div>
       <div>
+        <h3>Hello from the Magic Tavern Trivia</h3>
+        Has Chunt ever shapshifted into an oyster?
         <p>Want to read one of the hosts' unforgettable catchphrases?</p>
         <form action="submit">
           <label for="host">Enter their name here:</label>
@@ -196,18 +315,11 @@
             </li>
           </ul>
         </form>
+        <button>Arnie</button>
       </div>
-      <div class="container">
-        <h3 id="guests">Some of the Guests</h3>
-        <ul>
-          <li>Dripfang</li>
-          <li>Momo the Mouse</li>
-          <li>Baron Dragoon</li>
-          <li>A series of Bats</li>
-          <li>Larry Birdman</li>
-          <li>Flower</li>
-        </ul>
-      </div>
+
+      Chunt's up with that Chunt please Chunt of the litter Lil squishin it Get
+      Wet Bing Bong
       <div id="spotify">
         <iframe
           style="border-radius: 12px"
@@ -222,6 +334,14 @@
       </div>
     </main>
     <footer>
+      Visit the
+      <a
+        href="https://hellofromthemagictavern.com/"
+        target="_blank"
+        title="Official Hello from the Magic Tavern Website"
+        >Official Hello from the Magic Tavern Website</a
+      >
+      <br />
       Coded by
       <a
         href="https://www.linkedin.com/in/nicky-stevens-ba763a8/"
