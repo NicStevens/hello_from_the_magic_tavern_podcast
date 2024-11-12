@@ -17,7 +17,7 @@
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
         padding: 30px 70px;
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 20px auto;
       }
 
       h1 {
@@ -25,6 +25,15 @@
         text-align: center;
         margin-bottom: 0;
       }
+
+      h2 {
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+
       .crow {
         width: 400px;
       }
@@ -44,7 +53,7 @@
 
         margin: 0 auto;
         max-width: 1100px;
-        font-size: 16px;
+        font-size: 18px;
       }
       header a {
         color: black;
@@ -64,6 +73,7 @@
         margin: 20px auto;
         padding: 20px;
       }
+
       .container-2 {
         background: rgb(255, 255, 0, 0.7);
         color: rgb(255, 255, 255);
@@ -74,16 +84,18 @@
         padding: 30px 30px;
         max-width: 1200px;
         margin: 0 auto;
+        font-size: 30px;
       }
 
       strong {
-        font-size: 30px;
         text-align: center;
+        text-shadow: 1px 1px 2px black;
       }
 
-      hr {
+      hr .container {
         margin: 30px 30px;
       }
+
       #about {
         text-align: center;
       }
@@ -101,6 +113,27 @@
         border-radius: 30px;
       }
 
+      .wikidot {
+        text-align: center;
+      }
+
+      .answer {
+        color: yellow;
+      }
+
+      .trivia-button {
+        text-align: center;
+      }
+
+      button {
+        color: black;
+        background: rgb(255, 255, 0, 0.7);
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 7px 10px;
+        font-weight: bold;
+        font-size: 18px;
+      }
       footer {
         text-align: center;
         margin: 20px auto;
@@ -111,7 +144,7 @@
     <header>
       <span>
         <a href="#about">About</a> | <a href="#hosts">Hosts</a> |
-        <a href="#guests">Guests</a> |
+        <a href="#trivia">Trivia</a> |
         <a href="#spotify">Listen to the Podcast</a>
       </span>
       <div class="crow-h1-h2">
@@ -133,10 +166,10 @@
         <p>
           After falling through a portal behind a Burger King in Chicago on
           Earth, Arnie Niekamp found himself in the magical land of Foon. Using
-          the wi-fi signal from the Burger King, Arnie along with his Foonian
-          friends, Chunt the shapeshifter and Usidore the wizard, host a weekly
-          podcast during which they interview residents of Foon. Guests range
-          from all sorts of magical creatures from a mouse human strength and a
+          the wi-fi signal from the Burger King, Arnie, along with his Foonian
+          friends Chunt the shapeshifter and Usidore the wizard, hosts a weekly
+          podcast during which they interview residents of Foon. Guests include
+          all sorts of magical creatures from a mouse with human strength and a
           foul-mouthed flower to a necromancer made of 1,000 snakes in a skin
           suit, the Barron of Shrike Valley, and his creepy twins.
         </p>
@@ -151,12 +184,12 @@
       <div class="container-2">
         <strong>
           "Hello from the Magic Tavern is a hilarious improv comedy podcast that
-          will make a bad day good and a good day even better." - Avid
-          Listener</strong
+          will make a bad day good and a good day even better." -
+          @nickynicster</strong
         >
       </div>
       <div class="container">
-        <h3 id="hosts">Hello from the Hosts</h3>
+        <h2 id="hosts">Say Hello to the Hosts</h2>
         <div class="host">
           <div>
             <img
@@ -167,7 +200,7 @@
             />
           </div>
           <div>
-            <h2>Arnie Niekamp</h2>
+            <h3>Arnie Niekamp</h3>
             <p>
               Arnie is a human from Chicago, Illinois on Earth. He fell through
               a dimensional portal behind the Burger King on the corner of
@@ -181,7 +214,9 @@
             <p>Nicknames: Carnival Wilson, Fat Shaggy, Nie Nie</p>
             <p>
               Played by
-              <a href="https://www.instagram.com/arnieniekamp/?hl=en"
+              <a
+                href="https://www.instagram.com/arnieniekamp/?hl=en"
+                target="_blank"
                 >Arnie Niekamp</a
               >
             </p>
@@ -190,7 +225,7 @@
         <hr />
         <div class="host-chunt">
           <div>
-            <h2>Chunt the Shapeshifter</h2>
+            <h3>Chunt the Shapeshifter</h3>
             <p>
               Chunt is a shapeshifter who can often be found in badger form. The
               child of a hunger ghost and a manticore (a creature with a lion's
@@ -227,7 +262,7 @@
             />
           </div>
           <div>
-            <h2>Usidore the Blue</h2>
+            <h3>Usidore the Blue</h3>
             <p>
               Usidore is the Blue wizard. He was created of the earth, wind,
               fire, and birds and came into the world as a fully formed adult
@@ -248,13 +283,15 @@
             </p>
             <p>
               Learn more about Usidore and his names on his website
-              <a href="https://www.usidorerocks.com/#overview"
+              <a href="https://www.usidorerocks.com/#overview" target="_blank"
                 >Usidore ROCKS!</a
               >
             </p>
             <p>
               Played by
-              <a href="https://www.instagram.com/morepeoplehappy/"
+              <a
+                href="https://www.instagram.com/morepeoplehappy/"
+                target="_blank"
                 >Matt Young</a
               >
             </p>
@@ -262,64 +299,62 @@
         </div>
       </div>
       <div>
-        <h3>Hello from the Magic Tavern Trivia</h3>
-        Has Chunt ever shapshifted into an oyster?
-        <p>Want to read one of the hosts' unforgettable catchphrases?</p>
-        <form action="submit">
-          <label for="host">Enter their name here:</label>
-          <input
-            type="text"
-            placeholder="Arnie, Chunt, or Usidore"
-            id="host"
-            required
-          />
-          <button>Submit</button>
-        </form>
-        <form action="submit">
-          <label for="hosts"
-            >Want to read one of the hosts' unforgettable catchphrases? Choose a
-            host and click the Submit button</label
-          >
-          <select name="" id="hosts">
-            <option value="arnie">Arnie</option>
-            <option value="chunt">Chunt</option>
-            <option value="usidore">Usidore</option>
-          </select>
-        </form>
-        <form action="submit">
-          <label for="hosts"
-            >Want to read one of the hosts' unforgettable catchphrases? Choose a
-            host and click the Submit button</label
-          >
-          <ul>
-            <li>
-              <input type="radio" name="host" id="arnie" value="arnie" />
-              <label for="arnie">Arnie Niekamp</label>
-            </li>
-            <li>
-              <input type="radio" name="host" id="chunt" value="chunt" />
-              <label for="arnie">Chunt the Shapeshifter</label>
-            </li>
+        <div class="container">
+          <h2 id="trivia">
+            <strong>Hello from the Magic Tavern Trivia</strong>
+          </h2>
 
-            <li>
-              <input type="radio" name="host" id="usidore" value="usidore" />
-              <label for="arnie"
-                >Usidore the Blue, Wizard of the 12th Realm of Ephysiyies,
-                Master of Light and Shadow, Manipulator of Magical Delights,
-                Devourer of Chaos, Champion of the Great Halls of Terr'akkas,
-                the elves know him as Fi’ang Yalok, the dwarfs know him as
-                Zoenen Hoogstandjes, and he is known in the Northeast as
-                Gaismunēnas Meistar, and there may be other secret names you do
-                not know yet</label
+          <p class="wikidot">
+            Test your Hello from the Magic Tavern knowledge or take a guess and
+            learn something new!
+          </p>
+          <div>
+            <p>Has Chunt ever shapshifted into an oyster?</p>
+            <p class="answer" id="oyster"></p>
+            <div class="trivia-button">
+              <div class="trivia-button">
+                <button id="oyster-button">Click here to find out</button>
+              </div>
+            </div>
+            <hr />
+            <p>Which host uses the catchphrase "Bing Bong?"</p>
+            <p class="answer" id="bing-bong"></p>
+            <div class="trivia-button">
+              <button id="bing-bong-button">Find out</button>
+            </div>
+            <hr />
+            <p>Does Usidore love rocks?</p>
+            <p class="answer" id="rocks"></p>
+            <div class="trivia-button">
+              <button id="rocks-button">Does he?</button>
+            </div>
+            <hr />
+            <p>
+              Which spell powers Arnie's laptop, flash power, minuscule
+              lightning, or alakazam?
+            </p>
+            <p class="answer" id="spell"></p>
+            <div class="trivia-button">
+              <button id="spell-button">Find out the spell</button>
+            </div>
+            <hr />
+            <p>Is there only one wizard in all of Foon?</p>
+            <p class="answer" id="wizard"></p>
+            <div class="trivia-button">
+              <button id="wizard-button">What wizards?</button>
+            </div>
+            <br />
+
+            <p class="wikidot">
+              Learn more at the
+              <a href="http://magictavern.wikidot.com/" target="_blank"
+                >Hello from the Magic Tavern Wikidot.</a
               >
-            </li>
-          </ul>
-        </form>
-        <button>Arnie</button>
+            </p>
+          </div>
+        </div>
       </div>
 
-      Chunt's up with that Chunt please Chunt of the litter Lil squishin it Get
-      Wet Bing Bong
       <div id="spotify">
         <iframe
           style="border-radius: 12px"
@@ -334,6 +369,9 @@
       </div>
     </main>
     <footer>
+      Warning: This podcast contains adult themes and jokes and may not be
+      suitable for young children.
+      <br />
       Visit the
       <a
         href="https://hellofromthemagictavern.com/"
@@ -350,6 +388,51 @@
         >Nicky Stevens</a
       >
     </footer>
-    <script></script>
+
+    <script>
+      function oysterAnswer() {
+        let oysterElement = document.querySelector("#oyster");
+        oysterElement.innerHTML =
+          "Yes! Chunt has shapeshifted into many forms, such as an oyster, horse, crocodile, flamingo, gorilla, and much more!";
+      }
+
+      let oysterButton = document.querySelector("#oyster-button");
+      oysterButton.addEventListener("click", oysterAnswer);
+
+      function bingBongAnswer() {
+        let bingBongElement = document.querySelector("#bing-bong");
+        bingBongElement.innerHTML =
+          "Chunt! He has other classic catchphrases, such as 'Chunt's up with that?' and 'Chunt, please.'";
+      }
+
+      let bingBongButton = document.querySelector("#bing-bong-button");
+      bingBongButton.addEventListener("click", bingBongAnswer);
+
+      function rocksAnswer() {
+        let rocksElement = document.querySelector("#rocks");
+        rocksElement.innerHTML = "Yes! He also loves birds.";
+      }
+
+      let rocksButton = document.querySelector("#rocks-button");
+      rocksButton.addEventListener("click", rocksAnswer);
+
+      function spellAnswer() {
+        let spellElement = document.querySelector("#spell");
+        spellElement.innerHTML =
+          "Usidore casts the MINUSULE LIGHTNING spell to power Arnie's laptop.";
+      }
+
+      let spellButton = document.querySelector("#spell-button");
+      spellButton.addEventListener("click", spellAnswer);
+
+      function wizardAnswer() {
+        let wizardElement = document.querySelector("#wizard");
+        wizardElement.innerHTML =
+          "No! Foon is home to many wizards like Jyn'Leeviyah the Red, Spintax the Green, Can the Yellow, and Jamillious the Mauve.";
+      }
+
+      let wizardButton = document.querySelector("#wizard-button");
+      wizardButton.addEventListener("click", wizardAnswer);
+    </script>
   </body>
 </html>
