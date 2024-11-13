@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Welcome to the Hello from the Magic Tavern podcast fanpage created for a SheCodes challenge."
+      content="Welcome to the Hello from the Magic Tavern podcast fanpage created for a SheCodes challenge by Nicky Stevens."
     />
     <title>Hello from the Magic Tavern</title>
     <style>
@@ -37,6 +37,7 @@
       .crow {
         width: 400px;
       }
+
       .crow-h1-h2 {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -48,13 +49,12 @@
             rgba(0, 0, 0, 0.7)
           ),
           url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/970/original/burger_king_2.jpg?1731290545");
-
         color: white;
-
         margin: 0 auto;
         max-width: 1100px;
         font-size: 18px;
       }
+
       header a {
         color: black;
         font-size: 20px;
@@ -99,6 +99,7 @@
       #about {
         text-align: center;
       }
+
       .host {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -113,16 +114,24 @@
         border-radius: 30px;
       }
 
+      .arnie {
+        margin-bottom: 17px;
+      }
+
+      .chunt {
+        margin-top: 25px;
+      }
+
+      .usidore {
+        margin-top: 17px;
+      }
+
       .wikidot {
         text-align: center;
       }
 
       .answer {
         color: yellow;
-      }
-
-      .trivia-button {
-        text-align: center;
       }
 
       button {
@@ -134,18 +143,68 @@
         font-weight: bold;
         font-size: 18px;
       }
+
+      .trivia-button {
+        text-align: center;
+      }
+
       footer {
         text-align: center;
         margin: 20px auto;
       }
+
+      @media (max-width: 960px) {
+        header {
+          padding: 30px;
+        }
+        h1 {
+          font-size: 50px;
+          margin: 0 auto;
+        }
+        h2 {
+          font-size: 25px;
+        }
+        .crow {
+          width: 200px;
+          margin: 15px auto 0;
+        }
+        .crow-h1-h2 {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        .host {
+          display: grid;
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .host-chunt {
+          display: grid;
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .arnie {
+          margin-bottom: 0;
+        }
+        .chunt {
+          margin-top: 10px;
+          margin-bottom: 18px;
+        }
+        .usidore {
+          margin-top: 18px;
+        }
+        .answer {
+          text-align: center;
+        }
+      }
     </style>
   </head>
+
   <body>
     <header>
       <span>
         <a href="#about">About</a> | <a href="#hosts">Hosts</a> |
         <a href="#trivia">Trivia</a> |
-        <a href="#spotify">Listen to the Podcast</a>
+        <a href="#spotify">Listen</a>
       </span>
       <div class="crow-h1-h2">
         <div>
@@ -161,26 +220,27 @@
         </div>
       </div>
     </header>
+
     <main>
       <div class="container" id="about">
         <p>
           After falling through a portal behind a Burger King in Chicago on
           Earth, Arnie Niekamp found himself in the magical land of Foon. Using
-          the wi-fi signal from the Burger King, Arnie, along with his Foonian
-          friends Chunt the shapeshifter and Usidore the wizard, hosts a weekly
-          podcast during which they interview residents of Foon. Guests include
-          all sorts of magical creatures from a mouse with human strength and a
-          foul-mouthed flower to a necromancer made of 1,000 snakes in a skin
-          suit, the Barron of Shrike Valley, and his creepy twins.
+          the wi-fi signal from Burger King, Arnie and his Foonian friends,
+          Chunt the shapeshifter and Usidore the wizard, host a weekly podcast
+          on which they interview residents of Foon. Guests include all sorts of
+          magical creatures from a mouse with human strength and a foul-mouthed
+          flower to a necromancer made of 1,000 snakes in a skin suit and the
+          Barron of Shrike Valley and his creepy twins.
         </p>
 
         <p>
-          Immerse yourself into a fantastical world, get to know the stories of
-          Foon's diverse characters, see if you can keep up with the pop
-          curlture references, and revel (or maybe blush) in some good humored
-          silliness.
+          Immerse yourself in a fantastical world, get to know the stories of
+          Foon's diverse characters, see if you can keep up with the pop culture
+          references, and revel (or maybe blush) in some good-humored silliness.
         </p>
       </div>
+
       <div class="container-2">
         <strong>
           "Hello from the Magic Tavern is a hilarious improv comedy podcast that
@@ -188,6 +248,7 @@
           @nickynicster</strong
         >
       </div>
+
       <div class="container">
         <h2 id="hosts">Say Hello to the Hosts</h2>
         <div class="host">
@@ -233,7 +294,7 @@
               staple of Foon known for his various ventures such as hosting
               Chunt's Night and running Chu-Chu's Chow.
             </p>
-            <p>Nicknames: Chu Chu, King of the Badger, Li'l Squish</p>
+            <p>Nicknames: Chu Chu, King of the Badger, Lil' Squish</p>
             <p>
               Played by
               <a
@@ -264,13 +325,13 @@
           <div>
             <h3>Usidore the Blue</h3>
             <p>
-              Usidore is the Blue wizard. He was created of the earth, wind,
+              Usidore is the Blue wizard. He was created from the earth, wind,
               fire, and birds and came into the world as a fully formed adult
               over 300 years ago. Having studied at the Great Halls of
-              Tarr'akkas, he devotes his life to defeating evil. Most noteably
-              he seeks to defeat "The Dark Lord." He has many names including
-              secret ones that are said to have great, and sometimes
-              destructive, power.
+              Tarr'akkas, he devotes his life to defeating evil. Most notably,
+              he seeks to defeat The Dark Lord. He has many names including
+              secret ones that are said to have great and sometimes destructive
+              power.
             </p>
             <p>
               Some of Usidore's names: Usidore the Blue, Wizard of the 12th
@@ -298,60 +359,55 @@
           </div>
         </div>
       </div>
-      <div>
-        <div class="container">
-          <h2 id="trivia">
-            <strong>Hello from the Magic Tavern Trivia</strong>
-          </h2>
 
-          <p class="wikidot">
-            Test your Hello from the Magic Tavern knowledge or take a guess and
-            learn something new!
-          </p>
-          <div>
-            <p>Has Chunt ever shapshifted into an oyster?</p>
-            <p class="answer" id="oyster"></p>
-            <div class="trivia-button">
-              <div class="trivia-button">
-                <button id="oyster-button">Click here to find out</button>
-              </div>
-            </div>
-            <hr />
-            <p>Which host uses the catchphrase "Bing Bong?"</p>
-            <p class="answer" id="bing-bong"></p>
-            <div class="trivia-button">
-              <button id="bing-bong-button">Find out</button>
-            </div>
-            <hr />
-            <p>Does Usidore love rocks?</p>
-            <p class="answer" id="rocks"></p>
-            <div class="trivia-button">
-              <button id="rocks-button">Does he?</button>
-            </div>
-            <hr />
-            <p>
-              Which spell powers Arnie's laptop, flash power, minuscule
-              lightning, or alakazam?
-            </p>
-            <p class="answer" id="spell"></p>
-            <div class="trivia-button">
-              <button id="spell-button">Find out the spell</button>
-            </div>
-            <hr />
-            <p>Is there only one wizard in all of Foon?</p>
-            <p class="answer" id="wizard"></p>
-            <div class="trivia-button">
-              <button id="wizard-button">What wizards?</button>
-            </div>
-            <br />
-
-            <p class="wikidot">
-              Learn more at the
-              <a href="http://magictavern.wikidot.com/" target="_blank"
-                >Hello from the Magic Tavern Wikidot.</a
-              >
-            </p>
+      <div class="container">
+        <h2 id="trivia">
+          <strong>Hello from the Magic Tavern Trivia</strong>
+        </h2>
+        <p class="wikidot">
+          Test your Hello from the Magic Tavern knowledge or take a guess and
+          learn something new!
+        </p>
+        <div>
+          <p>Has Chunt ever shapeshifted into an oyster?</p>
+          <p class="answer" id="oyster"></p>
+          <div class="trivia-button">
+            <button id="oyster-button">Click here for answer</button>
           </div>
+          <hr />
+          <p>Which host uses the catchphrase "Bing Bong?"</p>
+          <p class="answer" id="bing-bong"></p>
+          <div class="trivia-button">
+            <button id="bing-bong-button">Find out</button>
+          </div>
+          <hr />
+          <p>Does Usidore love rocks?</p>
+          <p class="answer" id="rocks"></p>
+          <div class="trivia-button">
+            <button id="rocks-button">Does he?</button>
+          </div>
+          <hr />
+          <p>
+            Which spell powers Arnie's laptop: flash power, minuscule lightning,
+            or alakazam?
+          </p>
+          <p class="answer" id="spell"></p>
+          <div class="trivia-button">
+            <button id="spell-button">Tell me the spell</button>
+          </div>
+          <hr />
+          <p>Is there only one wizard in all of Foon?</p>
+          <p class="answer" id="wizard"></p>
+          <div class="trivia-button">
+            <button id="wizard-button">What wizards?</button>
+          </div>
+          <br />
+          <p class="wikidot">
+            Learn more at the
+            <a href="http://magictavern.wikidot.com/" target="_blank"
+              >Hello from the Magic Tavern Wikidot</a
+            >
+          </p>
         </div>
       </div>
 
@@ -368,32 +424,35 @@
         ></iframe>
       </div>
     </main>
+
     <footer>
-      Warning: This podcast contains adult themes and jokes and may not be
-      suitable for young children.
-      <br />
-      Visit the
-      <a
-        href="https://hellofromthemagictavern.com/"
-        target="_blank"
-        title="Official Hello from the Magic Tavern Website"
-        >Official Hello from the Magic Tavern Website</a
-      >
-      <br />
-      Coded by
-      <a
-        href="https://www.linkedin.com/in/nicky-stevens-ba763a8/"
-        target="_blank"
-        title="Nicky Stevens LinkedIn Profile"
-        >Nicky Stevens</a
-      >
+      <p>
+        Warning: This podcast contains adult themes and jokes and may not be
+        suitable for children.
+        <br />
+        Visit the
+        <a
+          href="https://hellofromthemagictavern.com/"
+          target="_blank"
+          title="Official Hello from the Magic Tavern Website"
+          >Official Hello from the Magic Tavern Website</a
+        >
+        <br />
+        Coded by
+        <a
+          href="https://www.linkedin.com/in/nicky-stevens-ba763a8/"
+          target="_blank"
+          title="Nicky Stevens LinkedIn Profile"
+          >Nicky Stevens</a
+        >
+      </p>
     </footer>
 
     <script>
       function oysterAnswer() {
         let oysterElement = document.querySelector("#oyster");
         oysterElement.innerHTML =
-          "Yes! Chunt has shapeshifted into many forms, such as an oyster, horse, crocodile, flamingo, gorilla, and much more!";
+          "Yes! Chunt has shapeshifted into many forms including an oyster, horse, crocodile, flamingo, gorilla, and much more!";
       }
 
       let oysterButton = document.querySelector("#oyster-button");
@@ -402,7 +461,7 @@
       function bingBongAnswer() {
         let bingBongElement = document.querySelector("#bing-bong");
         bingBongElement.innerHTML =
-          "Chunt! He has other classic catchphrases, such as 'Chunt's up with that?' and 'Chunt, please.'";
+          "Chunt! He also has other classic catchphrases, such as 'Chunt's up with that?' and 'Chunt, please.'";
       }
 
       let bingBongButton = document.querySelector("#bing-bong-button");
